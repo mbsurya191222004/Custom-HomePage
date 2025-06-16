@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 
 function QuickAccess() {
-    const [Links,SetLinks]= useState([["ChatGPT","https://chatgpt.com/"],["YouTube","https://www.youtube.com/"]])
+    const [Links,SetLinks]= useState([["ChatGPT","https://chatgpt.com/"],["YouTube","https://www.youtube.com/"],["YT Music","https://music.youtube.com/"]])
     const [Icons,SetIcons] = useState([])
     return (
         <motion.div 
@@ -19,7 +19,7 @@ function QuickAccess() {
                 duration : 1
             }
         }}
-        className="absolute  translate-x-[-50%] flex justify-evenly">
+        className="absolute translate-x-[-50%] flex justify-evenly">
             {
                 Links.map(
                     (link)=>{
@@ -28,7 +28,7 @@ function QuickAccess() {
                         return (
                             <a href={link[1]}>
                             <div className="bg-[rgba(0,0,0,0.2)] p-2 rounded-lg text-white flex flex-col justify-around items-center scale-75">
-                                <img height="50px" width="50px" src={icon} alt={link[0]} />
+                                <img height="50px" width="50px" src={icon} alt={link[0]}  className="m-1"/>
                                 <p>{link[0]}</p>
                             </div>
                             </a>

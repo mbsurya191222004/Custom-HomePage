@@ -18,7 +18,7 @@ export default function  Video() {
                 duration : 1
             }
         }}
-        src="BG2.mp4" autoPlay muted loop/> 
+        src="BG.mp4" autoPlay muted loop/> 
     </>
         
   )
