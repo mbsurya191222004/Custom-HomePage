@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import AddButton from "./AddButton";
 
 
 function QuickAccess() {
@@ -27,18 +28,20 @@ function QuickAccess() {
                         let icon = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
                         return (
                             <a href={link[1]}>
-                            <div className="bg-[rgba(0,0,0,0.2)] p-2 rounded-lg text-white flex flex-col justify-around items-center scale-75">
-                                <img height="50px" width="50px" src={icon} alt={link[0]}  className="m-1"/>
-                                <p>{link[0]}</p>
+                            <div className="bg-[rgba(0,0,0,0.2)] p-2 m-2 rounded-lg text-white flex flex-col justify-around items-center h-20 w-18">
+                                <img height="30px" width="30px" src={icon} alt={link[0]}  className="m-1"/>
+                                <p
+                                className="text-[0.75rem] font-mono "
+                                >
+                                    {link[0]}
+                                </p>
                             </div>
                             </a>
                         )
                     }
                 )
             }
-                <div className="bg-[rgba(0,0,0,0.2)] p-2 rounded-lg text-white flex flex-col justify-center items-center  scale-75">             
-                    <img height="70px" width="70px" src={"plus.svg"} alt="add"/>  
-                </div>
+            
         </motion.div>
       );
 }
