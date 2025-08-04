@@ -18,7 +18,7 @@ export default function  Video() {
             }
         }}
        className="fixed top-0 left-0 w-screen h-screen object-cover z-[-1]"
-        src="BG.mp4" autoPlay muted loop height={screen}/> 
+        src="/BG.mp4" autoPlay muted loop height={screen}/> 
     </>
         
   )
