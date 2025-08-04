@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Video from './components/video';
+import Video from './components/Video';
 import QuickAccess from './components/QuickAccess';
 
 
